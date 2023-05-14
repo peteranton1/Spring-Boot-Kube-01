@@ -1,0 +1,7 @@
+version: "3.0"
+services:
+  demo-service:
+    image: peteranton1/Spring-Boot-Kube-01:0.0.1-SNAPSHOT
+    container_name: demo-service
+    ports:
+      - 8080:8080

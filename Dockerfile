@@ -1,7 +1,7 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM openjdk:17-jdk-slim-buster
 
 WORKDIR /opt/app
-ARG JAR_FILE=build/lib/Spring-Boot-Kube-01-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=./build/libs/Spring-Boot-Kube-01-1.0.jar
 COPY ${JAR_FILE} app.jar
 
 ENTRYPOINT ["java","-jar","app.jar"]

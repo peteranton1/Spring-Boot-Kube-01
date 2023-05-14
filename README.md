@@ -36,5 +36,13 @@ This should return the response:
 ## Containerize the application
 
 This can be containerized by modifying the 
-build.gradle file. 
+build.gradle file or by creating a Dockerfile. 
+
+The Dockerfile approach would build with this command:
+
+    sudo docker build -t demo-service:1.0 .
+
+This can be run with :
+
+    sudo docker run -d demo-service:1.0
 
